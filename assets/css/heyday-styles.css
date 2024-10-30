@@ -1,0 +1,76 @@
+#heyday_complete_install_button {
+    margin: auto;
+    display: block;
+}
+
+#hdy-logo {
+    width: 157px;
+    height: 55px;
+    margin: auto;
+    display: block;
+}
+
+.heyday-welcome-div {
+    color: var(--Dark-Grey, #373737);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+.heyday-welcome-span {
+    color: #5DAAA1;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 1.3px;
+}
+
+#heyday_content {
+    direction: ltr;
+}
+
+#heyday_loader .hdy-loader {
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #5daaa1;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.heyday-progress-bar-container {
+    position: relative;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.heyday-progress-bar {
+    height: 20px;
+    width: 0%;
+    background-color: #5daaa1;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+.heyday-progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
